@@ -1,0 +1,49 @@
+<view class="apt-index">
+<!--搜索框开始-->
+    <view class="top-input">
+        <navigator class="input"  url="/pages/index/index" open-type="navigate">
+            搜索
+        </navigator>
+    </view>
+<!--搜索框结束-->
+
+<!--轮播图开始-->
+<view class="slideshow">
+    <swiper
+    indicator-dots="true"
+    indicator-color="black"
+    indicator-active-color="white"
+    autoplay="true"
+    interval="2000">
+      <swiper-item wx:for="{{swiper_list}}" wx:key="image_src">
+      <image src="{{item.image_src}}"></image>
+      </swiper-item>
+    </swiper>
+</view>
+<!--轮播图结束-->
+
+<!--nav开始-->
+<view class="apt-nav">
+    <block  wx:for="{{catItems}}" wx:key="image_src">
+    <image src="{{item.image_src}}"></image> 
+    </block>
+</view>
+<!--nav结束-->
+
+<!--nav列表开始-->
+     <view class="nav">
+      <block wx:for="{{floorData}}" wx:key="*this">
+        <view class="nav-title">
+            {{item.floor_title.name}} 
+        </view>
+        <view class="nav-list">
+           <navigate wx:for="{{item.product_list}}" wx:key="image_src">
+                <image src="{{item.image_src}}"></image>
+            </navigate>
+         </view>
+      </block>
+     </view>
+<!--nav列表结束-->
+
+</view>
+  

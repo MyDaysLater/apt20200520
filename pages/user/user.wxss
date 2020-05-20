@@ -1,0 +1,91 @@
+.apt-my {
+  background-color: #f9f9f9;
+}
+.apt-my .apt-profile {
+  height: 400rpx;
+  position: relative;
+  background-color: white;
+}
+.apt-my .apt-profile .user-bg {
+  height: 400rpx;
+}
+.apt-my .apt-profile .user-bg image {
+  width: 100%;
+  height: 400rpx;
+  filter: blur(10rpx);
+}
+.apt-my .apt-profile .user-peple {
+  height: 180rpx;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.apt-my .apt-profile .user-peple image {
+  width: 180rpx;
+  border-radius: 50%;
+}
+.apt-my .apt-profile .user-name {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+.apt-my .apt-profile button {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  color: red;
+  border-radius: 20rpx;
+  transform: translateX(-50%);
+  border: 1px solid red;
+}
+.apt-my .apt-nav-nav {
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  margin: 10rpx 0;
+  background-color: #fff;
+}
+.apt-my .apt-nav-nav .apt-nav-nav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.apt-my .apt-nav-nav .apt-nav-nav-item .iconfont {
+  font-size: 50rpx;
+}
+.apt-my .apt-nav-nav .apt-nav-nav-item .text {
+  font-size: 30rpx;
+}
+.apt-my .last1 {
+  height: 100%;
+  background-color: white;
+}
+.apt-my .last1 .last {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #ccc;
+}
+.apt-my .last1 .last .last-left {
+  display: flex;
+  align-items: center;
+  margin-left: 50rpx;
+}
+.apt-my .last1 .last .last-left .iconfont {
+  color: #434343;
+  font-size: 50rpx;
+}
+.apt-my .last1 .last .last-left .text {
+  margin-left: 30rpx;
+  color: #434343;
+  font-size: 30rpx;
+}
+.apt-my .last1 .last .last-right {
+  color: #ccc;
+  font-size: 30rpx;
+}
